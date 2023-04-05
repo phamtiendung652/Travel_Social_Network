@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Travel_Social_Network</string>
+    <string name="taikhoan">Tài Khoản</string>
+    <string name="matkhau">Mật Khẩu</string>
+    <string name="dangnhap">Đăng Nhập</string>
+    <string name="hoac">Hoặc</string>
+    <string name="you_yet_account">Bạn chưa có tài khoản?</string>
+    <string name="register">Đăng ký</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
