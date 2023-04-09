@@ -11,14 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Travel_Social_Network"
         tools:targetApi="31">
+
         <activity
-            android:name=".HomeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".app.UI.login.LoginActivity"
+            android:name=".app.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
