@@ -12,4 +12,8 @@
     <string name="email">Email</string>
     <string name="input_matkhau">Nhập mật khẩu</string>
     <string name="input_email">Nhập Email</string>
+    <string name="input_ma">Nhập mã xác nhận</string>
+    <string name="xacnhan">Xác nhận</string>
+    <string name="input_new_pass">Nhập mật khẩu mới</string>
+    <string name="change">Thay đổi</string>
 </resources>

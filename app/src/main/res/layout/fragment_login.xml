@@ -12,12 +12,13 @@
         android:layout_height="150dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/logo_travel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:id="@+id/tipAccount_Log"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,6 +38,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:id="@+id/tipPassword_Log"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
