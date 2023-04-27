@@ -15,7 +15,7 @@
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".app.MainActivity"
+            android:name=".app.UI.home.HomeActivity"
             android:exported="true"
             android:theme="@style/Theme.splash">
             <intent-filter>

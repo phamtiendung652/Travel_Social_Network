@@ -16,4 +16,7 @@
     <string name="xacnhan">Xác nhận</string>
     <string name="input_new_pass">Nhập mật khẩu mới</string>
     <string name="change">Thay đổi</string>
+    <string name="edit_post">Chỉnh sửa bài viết</string>
+    <string name="back">back</string>
+    <string name="save">Lưu</string>
 </resources>
