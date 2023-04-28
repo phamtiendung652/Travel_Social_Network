@@ -49,7 +49,6 @@
             android:id="@+id/editText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background=""
             android:hint="Gõ nội dung tìm kiếm"
             android:padding="5dp"
             app:hintTextColor="@color/black"
