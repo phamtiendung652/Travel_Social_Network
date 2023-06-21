@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".app.UI.post.PostFragment"
+    tools:context=".app.ui.post.PostFragment"
     tools:ignore="MissingConstraints">
 
     <Toolbar

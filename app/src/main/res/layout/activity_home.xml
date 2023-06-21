@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".app.UI.home.HomeActivity"
+    tools:context=".app.ui.home.HomeActivity"
     tools:ignore="MissingConstraints" >
 
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView2"
+        android:id="@+id/frmNavHome"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -22,13 +22,16 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/btmHome"
+        android:background="@color/Blue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/home_menu"
-        tools:ignore="BottomAppBar">
+        tools:ignore="BottomAppBar"
+        app:itemIconTint="@color/custom_bottom_home"
+        app:itemTextColor="@color/custom_bottom_home">
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

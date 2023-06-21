@@ -13,6 +13,6 @@
         android:id="@+id/btnOutstand"
         android:icon="@drawable/ic_star"/>
     <item android:title="Thông tin"
-        android:id="@+id/btnInformation"
+        android:id="@+id/btnProfile"
         android:icon="@drawable/ic_peson_home"/>
 </menu>
