@@ -21,4 +21,15 @@
     <string name="edit_post">Chỉnh sửa bài viết</string>
     <string name="back">back</string>
     <string name="save">Lưu</string>
+    <string name="pass_old">Nhập mật khẩu cũ</string>
+    <string name="forgot">Quên mật khẩu</string>
+    <string name="input_display">Nhập tên hiển thị</string>
+    <string name="policy">Chính sách và điều khoản</string>
+    <string name="input_account">Nhập tên tài khoản</string>
+    <string name="change_pass">Thay Đổi Mật Khẩu</string>
+    <string name="setting">Cài Đặt</string>
+    <string name="logout">Đăng Xuất</string>
+    <string name="exit">Thoát</string>
+    <string name="notification">Thông Báo</string>
+    <string name="addpost">Đăng bài viết</string>
 </resources>

@@ -4,9 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".app.UI.register.RegisterFragment"
+    tools:context=".app.ui.register.RegisterFragment"
     tools:ignore="MissingConstraints" >
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Blue"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/Blue"
+                android:contentDescription="@string/back"
+                android:minWidth="48dp"
+                android:src="@drawable/ic_back"
+                tools:ignore="TouchTargetSizeCheck" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="@string/register"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_weight="2"
+                android:textSize="35sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tipAccount"
@@ -14,17 +52,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
-        android:hint="Nhập tên tài khoản"
+        android:hint="@string/input_account"
         app:helperTextTextColor="#FF0000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:startIconDrawable="@drawable/ic_peson">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtAccount"
+            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="22sp"
@@ -39,7 +78,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
-        android:hint="Nhập tên hiển thị"
+        android:hint="@string/input_display"
         app:helperTextTextColor="#FF0000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,6 +89,7 @@
             android:id="@+id/edtDisplay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:textSize="22sp"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -62,15 +102,16 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="10dp"
+        app:helperTextTextColor="@color/Red"
         android:hint="@string/input_email"
         app:startIconDrawable="@drawable/ic_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tipDisplay">
-
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtEmail"
             android:textSize="22sp"
+            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress" />
@@ -94,6 +135,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtPassword"
+            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
@@ -117,8 +159,9 @@
         app:startIconDrawable="@drawable/ic_password">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtPassword_Check"
+            android:id="@+id/edtPasswordCheck"
             android:layout_width="match_parent"
+            android:textColor="@color/black"
             android:layout_height="wrap_content"
             android:textSize="22sp"
             android:inputType="textPassword" />
@@ -130,7 +173,7 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chính sách và điều khoản"
+        android:text="@string/policy"
         android:textSize="18sp"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"

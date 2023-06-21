@@ -3,11 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context=".app.ui.notification.Notification_Fragment"
+    android:layout_height="match_parent"
+    tools:context=".app.ui.setting.SettingFragment"
     tools:ignore="MissingConstraints" >
 
-    <!-- TODO: Update blank fragment layout -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -39,77 +38,67 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/notification"
+                android:text="@string/setting"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:textSize="35sp" />
         </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
 
-
-
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="331dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Hôm nay"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            tools:layout_editor_absoluteX="25dp">
-
-        </TextView>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-        </androidx.recyclerview.widget.RecyclerView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout5"
+    <Button
+        android:id="@+id/btnPolicy"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
-        tools:ignore="MissingConstraints">
+        android:layout_marginTop="30dp"
+        android:text="@string/policy"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:gravity="left"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Hôm qua"
-            android:textColor="@color/black"
-            android:textSize="20sp">
-
-        </TextView>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="282dp">
-
-        </androidx.recyclerview.widget.RecyclerView>
-    </LinearLayout>
-
-
+    <Button
+        android:id="@+id/btnLogOut"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="@string/logout"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPolicy" />
+    <Button
+        android:id="@+id/btnExit"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="@string/exit"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogOut" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

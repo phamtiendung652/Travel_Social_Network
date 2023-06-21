@@ -2,21 +2,51 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_travel"
+    android:id="@+id/nav_home"
     app:startDestination="@id/postFragment">
 
     <fragment
         android:id="@+id/postFragment"
-        android:name="datn.travel_social_network.app.UI.post.PostFragment"
+        android:name="datn.travel_social_network.app.ui.post.PostFragment"
         android:label="fragment_post"
         tools:layout="@layout/fragment_post" >
         <action
-            android:id="@+id/action_postFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            android:id="@+id/action_postFragment_to_editPostFragment"
+            app:destination="@id/editPostFragment" />
+        <action
+            android:id="@+id/action_postFragment_to_notification_Fragment"
+            app:destination="@id/notification_Fragment" />
     </fragment>
     <fragment
-        android:id="@+id/loginFragment"
-        android:name="datn.travel_social_network.app.UI.login.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        android:id="@+id/profileFragment"
+        android:name="datn.travel_social_network.app.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="datn.travel_social_network.app.ui.profile.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notification_Fragment"
+        android:name="datn.travel_social_network.app.ui.notification.Notification_Fragment"
+        android:label="fragment_notification_"
+        tools:layout="@layout/fragment_notification_" >
+        <action
+            android:id="@+id/action_notification_Fragment_to_postFragment"
+            app:destination="@id/postFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editPostFragment"
+        android:name="datn.travel_social_network.app.ui.post.EditPostFragment"
+        android:label="fragment_edit_post"
+        tools:layout="@layout/fragment_edit_post" />
 </navigation>
